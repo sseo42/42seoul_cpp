@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/08 19:55:27 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 21:21:53 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 19:31:32 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,12 @@
 
 # include <iostream>
 
+#ifndef INT_MAX
 # define INT_MAX 2147483647
+#endif
+#ifndef INT_MIN
 # define INT_MIN -2147483648
+#endif
 # define MANTISSA_BITS 23
 # define EXPONENT_BITS 8
 # define BIAS 127
