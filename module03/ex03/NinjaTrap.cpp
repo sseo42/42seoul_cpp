@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 18:04:43 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 16:30:49 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 22:26:32 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ NinjaTrap::NinjaTrap() : ClapTrap()
 	setMaxEP(120);
 	setMeleeATK(60);
 	setEP(120);
+	std::cout << "YOU JUST CREATED EMPTY NINJATRAP" << std::endl;
 }
 
 NinjaTrap::NinjaTrap(std::string name_str) : ClapTrap()

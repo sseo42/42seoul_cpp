@@ -6,11 +6,16 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:24:51 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 20:51:32 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 21:52:03 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap()
+{
+	std::cout << "YOU JUST CREATED EMPTY SCAVTRAP" << std::endl;
+}
 
 ScavTrap::ScavTrap( std::string name_str )
 {

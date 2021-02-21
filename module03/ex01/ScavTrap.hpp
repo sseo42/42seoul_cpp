@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 15:26:23 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 20:35:55 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 21:51:24 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ class	ScavTrap
 		std::string		challenge_pool[5];
 
 	public:
+		ScavTrap();
 		ScavTrap( std::string name_str );
 		~ScavTrap();
 		ScavTrap(ScavTrap const &copy);

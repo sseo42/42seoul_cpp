@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:24:51 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 17:18:29 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 21:55:30 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ FragTrap::FragTrap() : ClapTrap()
 	verb_str_pool[4] = "kicks";
 	for (int i = 0; i < 5; i++)
 		dmg_pool[i] = (i + 1) * 10;
+
+	std::cout << "YOU JUST CREATED EMPTY FRAGTRAP" << std::endl;
 }
 
 FragTrap::FragTrap( std::string name_str ) : ClapTrap()

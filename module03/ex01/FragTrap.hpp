@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 12:52:12 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 20:49:12 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 21:51:12 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ class	FragTrap
 		unsigned int	dmg_pool[5];
 
 	public:
+		FragTrap();
 		FragTrap( std::string name_str );
 		~FragTrap();
 		FragTrap(FragTrap const &copy);

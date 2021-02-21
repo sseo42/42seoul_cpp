@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:42:48 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 20:58:06 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 21:45:16 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int			main(void)
 	my_frag.rangedAttack("sseo");
 	my_frag.meleeAttack("sung");
 	my_frag.takeDamage(30);
+	my_frag.beRepaired(20);
+	my_frag.beRepaired(20);
 	my_frag.beRepaired(20);
 	my_frag.vaulthunter_dot_exe("test");
 	my_frag.vaulthunter_dot_exe("test");

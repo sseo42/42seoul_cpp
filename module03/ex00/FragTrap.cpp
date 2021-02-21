@@ -6,11 +6,16 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:24:51 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 20:50:25 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 21:53:30 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
+
+FragTrap::FragTrap()
+{
+	std::cout << "YOU JUST CREATED EMPTY FRAGTRAP" << std::endl;
+}
 	
 FragTrap::FragTrap( std::string name_str )
 {

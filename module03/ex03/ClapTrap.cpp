@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:24:51 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 16:36:01 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 22:24:58 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ ClapTrap::ClapTrap()
 	level = 1;
 	hit_points = 50;
 	energy_points = 50;
+	std::cout << "obj created !" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name_str)

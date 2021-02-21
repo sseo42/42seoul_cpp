@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:24:51 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 17:19:15 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 22:27:27 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ ScavTrap::ScavTrap() : ClapTrap()
 	setLVL(1);
 	setHP(100);
 	setEP(50);
+
+	std::cout << "YOU JUST CREATED SCAVTRAP WITH NAME \"None\"" << std::endl;
 }
 
 ScavTrap::ScavTrap( std::string name_str ) : ClapTrap()

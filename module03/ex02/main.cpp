@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 13:42:48 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/15 17:29:28 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 22:23:55 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ int			main(void)
 	FragTrap	my_frag("my frag");
 	ScavTrap	my_scav("my scav");
 	std::cout << std::endl;
-
+	
 	return (0);
 }
