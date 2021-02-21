@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 20:54:04 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/17 17:22:37 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 16:00:40 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ int			main(void)
 	ZombieEvent		evnt;
 
 	evnt.setZombieType("tester");
+
+	std::cout << "**test Zombie class**" << std::endl;
+	Zombie		zom1("hello", "stack");
+	Zombie		zom2("world", "stack");
 
 	std::cout << "**test 3mobs using 'newZombie' function**" << std::endl;
 	Zombie		*mob = evnt.newZombie("Dobby");

@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 00:43:47 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/17 17:38:58 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 16:11:11 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,11 @@
 
 class		Human
 {
-	public:
-		Brain	my_brain;
+	private:
+		const Brain		my_brain;
 
-		Brain		&getBrain(void);
+	public:
+		Brain const	&getBrain(void) const;
 		std::string	identify(void);
 };
 

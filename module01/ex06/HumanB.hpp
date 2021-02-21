@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 19:54:32 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/17 17:46:43 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 16:20:05 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,6 @@ class	HumanB
 	private:
 		std::string	name;
 		Weapon	*wp;
-
-		void	atk(void);
-		void	change_wp(Weapon &wp_obj);
 
 	public:
 		HumanB(std::string name_str);

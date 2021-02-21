@@ -6,9 +6,11 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/07 17:58:57 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/07 19:08:57 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 16:29:46 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "replace.hpp"
 
 void		replace_str(std::string &line, char *src, char *des)
 {

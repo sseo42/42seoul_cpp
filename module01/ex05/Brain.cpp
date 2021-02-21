@@ -6,18 +6,17 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 00:43:04 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/17 17:38:31 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 16:13:36 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Brain.hpp"
 
-Brain::Brain()
+Brain::Brain() : base("0123456789ABCDEF")
 {
-	base = "0123456789ABCDEF";
 }
 
-std::string		Brain::identify(void)
+std::string		Brain::identify(void) const
 {
 	size_t			addr, tmp, cnt;
 	std::string		addr_str;

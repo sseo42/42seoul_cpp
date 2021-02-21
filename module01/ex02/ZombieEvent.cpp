@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/04 20:48:33 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/17 17:28:15 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/21 15:59:22 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ Zombie		*ZombieEvent::randomChump()
 	int				name_length = 10;
 	std::string		name;
 	Zombie			*newbe;
+
 	if (!val)
 		val = (size_t)(&name);
 	name.resize(name_length);
