@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/16 00:50:10 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/16 02:03:34 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 15:17:16 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ Ice::Ice(Ice const &copy) : AMateria(copy) {}
 
 Ice const &Ice::operator = (Ice const &obj)
 {
+	if (this == &obj)
+		return (*this);
 	setXP(obj.getXP());
 	return (*this);
 }

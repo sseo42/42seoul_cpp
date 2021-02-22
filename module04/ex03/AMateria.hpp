@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 18:26:18 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/16 02:00:20 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 15:25:25 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ class		ICharacter;
 class		AMateria
 {
 	private:
+		AMateria();
 		std::string		_type;
 		unsigned int	_xp;
 
 	public:
 		AMateria(std::string const &type);
-		//AMateria();
 		virtual ~AMateria();
 		AMateria(AMateria const &copy);
 		AMateria const &operator = (AMateria const &obj);
@@ -37,9 +37,6 @@ class		AMateria
 		std::string const	&getType() const;
 		unsigned int		getXP() const;
 		void				setXP(unsigned int xp);
-		/*
-		void				setType(std::string const &type);
-		*/
 };
 
 #endif

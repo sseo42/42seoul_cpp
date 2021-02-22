@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 16:00:04 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/14 17:20:37 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 14:33:49 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,10 @@ int			main(void)
 
 	robert.polymorph(jim);
 	robert.polymorph(joe);
-	/*
-	Peon		tester(joe);
-	std::cout << tester << std::endl;
-	*/
+
+	FakePeon	mama("Mama");
+	std::cout << mama;
+
+	robert.polymorph(mama);
 	return (0);
 }

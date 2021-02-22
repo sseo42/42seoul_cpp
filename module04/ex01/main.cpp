@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 18:01:03 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/14 18:24:10 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 15:01:40 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,22 +47,15 @@ int			main(void)
 	for (int i = 0; i < 10; i++)
 	{
 		me->recoverAP();
+		std::cout << c->getHP() << std::endl;
 		me->attack(c);
 	}
 
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
-	me->attack(d);
+	for (int i = 0; i < 10; i++)
+	{
+		std::cout << d->getHP() << std::endl;
+		me->attack(d);
+	}
 	delete d;
 	delete pr;
 	delete me;

@@ -6,11 +6,13 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/13 14:14:49 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/14 18:04:36 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 15:03:59 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Character.hpp"
+
+Character::Character() {}
 
 Character::Character(std::string const &name_str) : wp_p(0)
 {
@@ -19,9 +21,7 @@ Character::Character(std::string const &name_str) : wp_p(0)
 	wp_p = 0;
 }
 
-Character::~Character()
-{
-}
+Character::~Character() {}
 
 Character::Character(Character const &copy)
 {

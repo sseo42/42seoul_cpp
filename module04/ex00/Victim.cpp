@@ -6,11 +6,13 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 15:33:51 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/14 17:28:57 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 14:09:56 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Victim.hpp"
+
+Victim::Victim() {}
 
 Victim::Victim(std::string name_str)
 {

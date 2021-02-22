@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/16 01:02:30 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/16 02:03:21 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 15:18:07 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ Cure::Cure(Cure const &copy) : AMateria(copy) {}
 
 Cure const &Cure::operator = (Cure const &obj)
 {
+	if (this == &obj)
+		return (*this);
 	setXP(obj.getXP());
 	return (*this);
 }

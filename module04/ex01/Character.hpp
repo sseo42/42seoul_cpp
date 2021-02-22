@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/13 14:08:31 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/13 15:00:12 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 15:03:18 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 class		Character
 {
 	private:
+		Character();
 		std::string		name;
 		int				ap;
 		AWeapon			*wp_p;

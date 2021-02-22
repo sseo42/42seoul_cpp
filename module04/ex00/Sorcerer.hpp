@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 13:44:50 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/14 17:22:30 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 14:10:37 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 class		Sorcerer
 {
 	private:
+		Sorcerer();
 		std::string		name;
 		std::string		title;
 

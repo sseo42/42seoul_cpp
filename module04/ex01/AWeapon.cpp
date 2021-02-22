@@ -6,11 +6,13 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 17:53:30 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/14 17:35:11 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 14:35:50 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AWeapon.hpp"
+
+AWeapon::AWeapon() {}
 
 AWeapon::AWeapon(std::string const &name_str, int apcost_int, int damage_int)
 {

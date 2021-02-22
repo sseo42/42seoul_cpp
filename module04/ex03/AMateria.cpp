@@ -6,12 +6,14 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/16 00:22:42 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/16 02:06:35 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 15:26:10 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 #include "Character.hpp"
+
+AMateria::AMateria() {}
 
 AMateria::AMateria(std::string const &type)
 {
@@ -29,6 +31,8 @@ AMateria::AMateria(AMateria const &copy)
 
 AMateria const &AMateria::operator = (AMateria const &obj)
 {
+	if (this == &obj)
+		return (*this);
 	_xp = obj.getXP();
 	return (*this);
 }
@@ -53,11 +57,3 @@ void				AMateria::setXP(unsigned int xp)
 {
 	_xp = xp;
 }
-
-/*
-void				AMateria::setType(std::string const &type)
-{
-	_type = type;
-}
-
-*/

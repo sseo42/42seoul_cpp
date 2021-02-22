@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 14:49:38 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/14 16:19:12 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 15:13:15 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,14 @@ TacticalMarine::~TacticalMarine()
 
 TacticalMarine::TacticalMarine(TacticalMarine const &copy) : ISpaceMarine(copy)
 {
-	//no variables
+	std::cout << "Tactical Marine ready for battle!" << std::endl;
 }
 
 TacticalMarine const &TacticalMarine::operator = (TacticalMarine const &obj)
 {
 	//no variables
+	if (this == &obj)
+		return (*this);
 	return (*this);
 }
 

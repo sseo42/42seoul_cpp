@@ -6,7 +6,7 @@
 /*   By: sseo <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 17:12:04 by sseo              #+#    #+#             */
-/*   Updated: 2021/02/12 19:12:05 by sseo             ###   ########.fr       */
+/*   Updated: 2021/02/22 14:35:20 by sseo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class		AWeapon
 {
 	private:
+		AWeapon();
 		std::string		name;
 		int				apcost;
 		int				damage;
