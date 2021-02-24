@@ -2,34 +2,34 @@
 
 void        *serialize(void)
 {
-    char    c;
-    char    *out = new char[20];
+	Data	*myData = new Data;
 
-    for (int i = 0; i < 24; i++)
+    for (int i = 0; i < 8; i++)
     {
         srand(time(NULL) * 2 + i);
-        c = (rand() % 26 + 65);
-        *(out + i) = c;
+        myData->s1 += static_cast<char>(rand() % 26 + 65);
+    }
+	myData->n = static_cast<int>(rand());
+    for (int i = 8; i < 16; i++)
+    {
+        srand(time(NULL) * 2 + i);
+        myData->s2 += static_cast<char>(rand() % 26 + 65);
     }
     /*
     int     *num_p;
     num_p = (int *)(out + 8);
     *num_p = (65 << 24) + (65 << 16) + (65 << 8) + 65;
     */
-    return ((void *)out);
+    return (reinterpret_cast<void *>(myData));
 }
 
 Data        *deserialize(void * raw)
 {
-    char    *target = (char *)raw;
-    Data    *decoder = new Data();
+    Data    *decode = new Data();
 
-    for (int i = 0; i < 8; i++)
-    {
-        decoder->s1 += *(target + i);
-        decoder->s2 += *(target + i + 12);
-        decoder->n = *(int *)(target + 8);
-    }
+    decode->s1 += std::string(reinterpret_cast<char *>raw + 1, 8);
+    decode->s2 += std::string(reinterpret_cast<char *>raw + 33, 8);
+    decode->n = *(reinterpret_cast<int *>raw + 8);
 
-    return (decoder);
+    return (decode);
 }
