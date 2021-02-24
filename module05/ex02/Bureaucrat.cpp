@@ -1,6 +1,8 @@
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
 
+Bureaucrat::Bureaucrat() : _name("None") {}
+
 Bureaucrat::Bureaucrat(std::string const &name, int grade) : _name(name)
 {
     if (grade < TOP_GRADE)

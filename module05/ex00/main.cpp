@@ -11,11 +11,11 @@ int         main(void)
         std::cerr << e.what() << std::endl;
         try
         {
-            Bureaucrat student2("BB", 149);
+            Bureaucrat student2("BB", 3);
             std::cout << student2 << std::endl;
-            student2.decreaseGrade();
-            student2.decreaseGrade();
-            student2.decreaseGrade();
+            student2.increaseGrade();
+            student2.increaseGrade();
+            student2.increaseGrade();
         }
         catch(const std::exception& e)
         {

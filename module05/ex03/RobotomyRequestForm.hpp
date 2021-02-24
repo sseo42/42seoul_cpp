@@ -5,6 +5,9 @@
 
 class   RobotomyRequestForm : public Form
 {
+	private:
+        RobotomyRequestForm();
+
     public:
         RobotomyRequestForm(std::string const &type);
         ~RobotomyRequestForm();

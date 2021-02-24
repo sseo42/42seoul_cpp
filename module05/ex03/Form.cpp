@@ -1,6 +1,8 @@
 #include "Form.hpp"
 #include "Bureaucrat.hpp"
 
+Form::Form() : _name("None"), _grade4sign(0), _grade4exec(0) {}
+
 Form::Form(std::string const &name, int grade4sign, int grade4exec, std::string const &target) :
     _name(name),
     _grade4sign(grade4sign),
@@ -26,7 +28,7 @@ Form::Form(Form const &copy) :
 Form const &Form::operator = (Form const &obj)
 {
     if (this == &obj)
-        return (*this);
+		return (*this);
     _target = obj.getTarget();
     _sign = obj.getSign();
     return (*this);

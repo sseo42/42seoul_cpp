@@ -1,6 +1,8 @@
 #include "Form.hpp"
 #include "Bureaucrat.hpp"
 
+Form::Form() : _name("None"), _grade(0) {}
+
 Form::Form(std::string const &name, int grade) :
     _name(name),
     _grade(grade)

@@ -1,6 +1,8 @@
 #include "RobotomyRequestForm.hpp"
 #include "Bureaucrat.hpp"
 
+RobotomyRequestForm::RobotomyRequestForm() : Form("None", 0, 0, "None") {}
+
 RobotomyRequestForm::RobotomyRequestForm(std::string const &type) : Form("RobotomyRequestForm", 72, 45, type) {}
 
 RobotomyRequestForm::~RobotomyRequestForm() {}

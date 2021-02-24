@@ -1,6 +1,8 @@
 #include "RobotomyRequestForm.hpp"
 #include "Bureaucrat.hpp"
 
+RobotomyRequestForm::RobotomyRequestForm() : Form("None", 0, 0, "None") {}
+
 RobotomyRequestForm::RobotomyRequestForm(std::string const &type) : Form("RobotomyRequestForm", 72, 45, type) {}
 
 RobotomyRequestForm::~RobotomyRequestForm() {}
@@ -9,7 +11,7 @@ RobotomyRequestForm::RobotomyRequestForm(RobotomyRequestForm const &copy) : Form
 
 RobotomyRequestForm const &RobotomyRequestForm::operator = (RobotomyRequestForm const &obj)
 {
-    if (this == &obj)
+	if (this == &obj)
         return (*this);
     setTarget(obj.getTarget());
     setSign(obj.getSign());

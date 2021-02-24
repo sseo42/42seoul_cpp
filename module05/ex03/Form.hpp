@@ -14,6 +14,7 @@ class Bureaucrat;
 class   Form
 {
     private:
+		Form();
         std::string const   _name;
         int const           _grade4sign;
         int const           _grade4exec;

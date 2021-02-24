@@ -1,6 +1,8 @@
 #include "ShrubberyCreationForm.hpp"
 #include "Bureaucrat.hpp"
 
+ShrubberyCreationForm::ShrubberyCreationForm() : Form("None", 0, 0, "None") {}
+
 ShrubberyCreationForm::ShrubberyCreationForm(std::string const &type) : Form("ShrubberyCreationForm", 145, 137, type) {}
 
 ShrubberyCreationForm::~ShrubberyCreationForm() {}
@@ -9,8 +11,8 @@ ShrubberyCreationForm::ShrubberyCreationForm(ShrubberyCreationForm const &copy) 
 
 ShrubberyCreationForm const &ShrubberyCreationForm::operator = (ShrubberyCreationForm const &obj)
 {
-    if (this == &obj)
-        return (*this);
+	if (this == &obj)
+		return (*this);
     setTarget(obj.getTarget());
     setSign(obj.getSign());
     return (*this);

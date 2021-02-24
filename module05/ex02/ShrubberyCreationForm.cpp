@@ -1,6 +1,8 @@
 #include "ShrubberyCreationForm.hpp"
 #include "Bureaucrat.hpp"
 
+ShrubberyCreationForm::ShrubberyCreationForm() : Form("None", 0, 0, "None") {}
+
 ShrubberyCreationForm::ShrubberyCreationForm(std::string const &type) : Form("ShrubberyCreationForm", 145, 137, type) {}
 
 ShrubberyCreationForm::~ShrubberyCreationForm() {}

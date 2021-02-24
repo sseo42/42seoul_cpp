@@ -1,6 +1,8 @@
 #include "PresidentialPardonForm.hpp"
 #include "Bureaucrat.hpp"
 
+PresidentialPardonForm::PresidentialPardonForm() : Form("None", 0, 0, "None") {}
+
 PresidentialPardonForm::PresidentialPardonForm(std::string const &type) : Form("PresidentialPardonForm", 25, 5, type) {}
 
 PresidentialPardonForm::~PresidentialPardonForm() {}
@@ -10,7 +12,7 @@ PresidentialPardonForm::PresidentialPardonForm(PresidentialPardonForm const &cop
 PresidentialPardonForm const &PresidentialPardonForm::operator = (PresidentialPardonForm const &obj)
 {
     if (this == &obj)
-        return (*this);
+		return (*this);
     setTarget(obj.getTarget());
     setSign(obj.getSign());
     return (*this);

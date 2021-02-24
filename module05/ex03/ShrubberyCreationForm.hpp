@@ -6,6 +6,9 @@
 
 class   ShrubberyCreationForm : public Form
 {
+	private:
+        ShrubberyCreationForm();
+
     public:
         ShrubberyCreationForm(std::string const &type);
         ~ShrubberyCreationForm();

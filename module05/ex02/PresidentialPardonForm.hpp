@@ -5,6 +5,9 @@
 
 class   PresidentialPardonForm : public Form
 {
+	private:
+        PresidentialPardonForm();
+
     public:
         PresidentialPardonForm(std::string const &type);
         ~PresidentialPardonForm();

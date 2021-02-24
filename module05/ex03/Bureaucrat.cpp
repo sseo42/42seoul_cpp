@@ -1,6 +1,8 @@
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
 
+Bureaucrat::Bureaucrat() : _name("None") {}
+
 Bureaucrat::Bureaucrat(std::string const &name, int grade) : _name(name)
 {
     if (grade < TOP_GRADE)
@@ -21,7 +23,7 @@ Bureaucrat::Bureaucrat(Bureaucrat const &copy) : _name(copy.getName())
 Bureaucrat const &Bureaucrat::operator = (Bureaucrat const &obj)
 {
     if (this == &obj)
-        return (*this);
+		return (*this);
     _grade = obj.getGrade();
     return (*this);
 }
