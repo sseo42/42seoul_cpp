@@ -15,11 +15,6 @@ void        *serialize(void)
         srand(time(NULL) * 2 + i);
         myData->s2 += static_cast<char>(rand() % 26 + 65);
     }
-    /*
-    int     *num_p;
-    num_p = (int *)(out + 8);
-    *num_p = (65 << 24) + (65 << 16) + (65 << 8) + 65;
-    */
     return (reinterpret_cast<void *>(myData));
 }
 
@@ -27,9 +22,9 @@ Data        *deserialize(void * raw)
 {
     Data    *decode = new Data();
 
-    decode->s1 += std::string(reinterpret_cast<char *>raw + 1, 8);
-    decode->s2 += std::string(reinterpret_cast<char *>raw + 33, 8);
-    decode->n = *(reinterpret_cast<int *>raw + 8);
+    decode->s1 += std::string(reinterpret_cast<char *>(raw) + 1, 8);
+    decode->n = *(reinterpret_cast<int *>(raw) + 6);
+    decode->s2 += std::string(reinterpret_cast<char *>(raw) + 29, 8);
 
     return (decode);
 }

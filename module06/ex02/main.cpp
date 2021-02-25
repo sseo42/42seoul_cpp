@@ -6,15 +6,14 @@
 int         main(void)
 {
     Base    *test1 = generate();
-    Base    *test2 = generate();
-    Base    *test3 = generate();
-
     identify_from_pointer(test1);
     identify_from_reference(*test1);
 
+    Base    *test2 = generate();
     identify_from_pointer(test2);
     identify_from_reference(*test2);
 
+    Base    *test3 = generate();
     identify_from_pointer(test3);
     identify_from_reference(*test3);
 

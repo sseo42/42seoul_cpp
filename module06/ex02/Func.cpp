@@ -12,11 +12,20 @@ Base        *generate(void)
     chice = (unsigned int)rand() % 3;
     my_seed++;
     if (!chice)
+	{
+		std::cout << "generate A!!" << std::endl;
         return (new A());
+	}
     else if (chice == 1)
+	{
+		std::cout << "generate B!!" << std::endl;
         return (new B());
+	}
     else
+	{
+		std::cout << "generate C!!" << std::endl;
         return (new C());
+	}
 }
 
 void        identify_from_pointer( Base *p )
