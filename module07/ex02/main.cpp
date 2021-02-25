@@ -36,6 +36,5 @@ int     main(void)
     {
         std::cout << "test assignation: " << test[i] << std::endl;
     }
-
     return (0);
 }

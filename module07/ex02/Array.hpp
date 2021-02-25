@@ -11,6 +11,8 @@ class Array
         unsigned int    _size;
 
     public:
+		Array() : _arr(new T[0]), _size(0) {};
+
         Array(unsigned int n)
         {
             _size = n;
