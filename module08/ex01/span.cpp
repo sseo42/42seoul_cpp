@@ -23,6 +23,7 @@ Span const &Span::operator = (Span const &obj)
     if (this == &obj)
         return (*this);
     _size = obj._size;
+	storage.clear();
     storage = obj.storage;
     return (*this);
 }
