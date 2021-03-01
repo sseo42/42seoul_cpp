@@ -17,8 +17,6 @@ class Array
         {
             _size = n;
             _arr = new T[_size];
-            for (unsigned int idx = 0; idx < _size; idx++)
-                _arr[idx] = 0;
         };
 
         ~Array()
@@ -28,8 +26,8 @@ class Array
 
         Array(Array const &copy)
         {
-            _size = copy.size();
-            _arr = new T[_size];
+			_size = copy.size();
+			_arr = new T[_size];
             for (unsigned int idx = 0; idx < _size; idx++)
                 _arr[idx] = copy.getVal(idx);
         };

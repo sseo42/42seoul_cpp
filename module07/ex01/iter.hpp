@@ -1,12 +1,21 @@
 #ifndef ITER_HPP
 # define ITER_HPP
 
-template< typename A, typename B, typename C >
-void iter(A first_param, B second_param, C third_param)
+template< typename T >
+void iter(T *array, size_t size, void (*func)(T const &))
 {
-    for (B it = 0; it < second_param; it++)
+    for (size_t it = 0; it < size; it++)
     {
-        third_param(first_param[it]);
+        func(array[it]);
+    }
+}
+
+template< typename T>
+void iter(T *array, size_t size, void (*func)(T &))
+{
+    for (size_t it = 0; it < size; it++)
+    {
+        func(array[it]);
     }
 }
 

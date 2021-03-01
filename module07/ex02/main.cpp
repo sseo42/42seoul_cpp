@@ -36,5 +36,16 @@ int     main(void)
     {
         std::cout << "test assignation: " << test[i] << std::endl;
     }
+
+	std::cout << "-----------------test string-----------------" << std::endl;
+	Array<std::string> last(3);
+	last[0] = "hello";
+	last[1] = "world";
+	last[2] = "!";
+
+    for (int i = 0; i < 10; i++)
+    {
+        std::cout << "test string: " << last[i] << std::endl;
+    }
     return (0);
 }
