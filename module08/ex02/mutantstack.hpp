@@ -33,19 +33,19 @@ class MutantStack : public _Container
 		}
 
         iterator
-        begin() _GLIBCXX_NOEXCEPT
+        begin()
         { return _Container::c.begin(); }
 
         const_iterator
-        begin() const _GLIBCXX_NOEXCEPT
+        begin() const
         { return _Container::c.begin(); }
 
         iterator
-        end() _GLIBCXX_NOEXCEPT
+        end()
         { return _Container::c.end(); }
 
         const_iterator
-        end() const _GLIBCXX_NOEXCEPT
+        end() const
         { return _Container::c.end(); }
 
         reverse_iterator
@@ -53,15 +53,15 @@ class MutantStack : public _Container
         { return _Container::c.rbegin(); }
 
         const_reverse_iterator
-        rbegin() const _GLIBCXX_NOEXCEPT
+        rbegin() const
         { return _Container::c.rbegin(); }
 
         reverse_iterator
-        rend() _GLIBCXX_NOEXCEPT
+        rend()
         { return _Container::c.rend(); }
 
         const_reverse_iterator
-        rend() const _GLIBCXX_NOEXCEPT
+        rend() const
         { return _Container::c.rend(); }
 };
 
