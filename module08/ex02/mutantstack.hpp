@@ -49,7 +49,7 @@ class MutantStack : public _Container
         { return _Container::c.end(); }
 
         reverse_iterator
-        rbegin() _GLIBCXX_NOEXCEPT
+        rbegin()
         { return _Container::c.rbegin(); }
 
         const_reverse_iterator
