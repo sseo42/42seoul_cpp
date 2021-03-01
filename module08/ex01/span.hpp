@@ -4,9 +4,9 @@
 # include <iostream>
 # include <set>
 
-# ifndef UINT_MAX
+#ifndef UINT_MAX
 # define UINT_MAX 4294967295
-# endif
+#endif
 
 class Span
 {
