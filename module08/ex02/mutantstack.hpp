@@ -21,6 +21,17 @@ class MutantStack : public _Container
 
         MutantStack(MutantStack const &copy) : _Container(copy) {}
 
+		MutantStack const &operator=(MutantStack<T> const &obj)
+		{
+			if (this == &obj)
+				return (*this);
+			while (!this->empty())
+				this->pop();
+			for (const_iterator it = obj.begin(); it != obj.end(); it++)
+				this->push(*it);
+			return (*this);
+		}
+
         iterator
         begin() _GLIBCXX_NOEXCEPT
         { return _Container::c.begin(); }

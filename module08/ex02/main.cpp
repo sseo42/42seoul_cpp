@@ -19,11 +19,22 @@ int main()
     --it;
     while (it != ite)
     {
-    std::cout << *it << std::endl;
-    ++it;
+    	std::cout << *it << std::endl;
+    	++it;
     }
     std::stack<int> s(mstack);
 
+	std::cout << "===================extra test=====================" << std::endl;
     std::cout << "test: " << (s < mstack) << std::endl;
+	MutantStack<int> tmp;
+
+	tmp = mstack;
+	it = tmp.begin();
+	ite = tmp.end();
+    while (it != ite)
+    {
+    	std::cout << *it << std::endl;
+    	++it;
+	}
     return 0;
 }
